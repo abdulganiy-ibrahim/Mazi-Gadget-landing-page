@@ -1,4 +1,3 @@
-import MaziLogo from '@/public/brandimage/mazi-logo.png';
 import Image from 'next/image';
 
 type ImageLogoProps = {
@@ -10,8 +9,8 @@ export default function ImageLogo({width, height}: ImageLogoProps) {
   return (
     <>
     <Image 
-      src={MaziLogo}
-      alt='mazi logo'
+      src='/brandimage/mazi-logo.png'
+      alt='Mazi Gadgets'
       width={width}
       height={height}
       className='w-auto h-auto'
