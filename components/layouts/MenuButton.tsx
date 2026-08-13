@@ -3,7 +3,7 @@
 import { MenuIcon, X, ArrowRight } from 'lucide-react';
 import { Button } from '../ui';
 import { useState } from 'react';
-import { BrandLogo, BrandName } from '../brand';
+import { ImageLogo } from '../brand';
 import { navLinks as Links } from '@/lib/data';
 import Link from 'next/link';
 
@@ -32,10 +32,9 @@ export default function MenuButton() {
               onClick={toggleMenu}
             />
 
-            <aside className='fixed overflow-y-auto bg-background flex flex-col top-0 right-0 min-h-screen w-64 md:w-80 z-50 shadow-soft rounded-l-lg p-4'>
+            <aside className='fixed overflow-y-auto bg-dark-background flex flex-col top-0 right-0 min-h-screen w-64 md:w-80 z-50 shadow-soft rounded-l-lg p-4'>
               <div className="flex items-center space-x-2 mb-8">
-                <BrandLogo variant='secondary' />
-                <BrandName variant='secondary' />
+                <ImageLogo height={100} width={150}/>
               </div>
 
               <nav className="flex flex-col space-y-4">
@@ -53,13 +52,13 @@ export default function MenuButton() {
               </nav>
 
               <div>
-                <Button 
-                  className="w-full flex items-center justify-between gap-2 mt-15 bg-danger/80 text-white rounded-lg font-semibold transition-all duration-300"
+                <button 
+                  className="w-full flex items-center justify-between gap-2 mt-15 py-2 px-4 bg-danger text-white rounded-lg font-semibold hover:bg-danger/80 transition-all duration-300"
                   onClick={toggleMenu}
                 >
                   Close menu 
                   <X className="h-4 w-4" />
-                </Button>
+                </button>
               </div>
             </aside>
           </>

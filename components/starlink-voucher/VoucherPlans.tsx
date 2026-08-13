@@ -97,7 +97,7 @@ export default function VoucherPlans() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-lg font-bold text-white">{plan.data}</p>
+                  <p className="text-lg font-bold text-foreground">{plan.data}</p>
                   <p className="mt-1 text-sm text-muted-foreground">
                     {plan.validity} · {plan.users} {plan.users === 1 ? "User" : "Users"}
                   </p>

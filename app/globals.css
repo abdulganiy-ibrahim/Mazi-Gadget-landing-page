@@ -27,6 +27,11 @@
   /* Font */
   --font-heading: var(--font-manrope);
   --font-body: var(--font-inter);
+
+  /* Semantic Colors */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
 }
 
 html {
