@@ -16,7 +16,7 @@ export default function DesktopHeader() {
             <Link
               key={link.label}
               href={link.href}
-              className='text-white font-semibold p-2 hover:text-primary hover:border-b hover:border-primary transition-all duration-300'
+              className='text-white font-semibold py-2 px-4 hover:text-primary hover:border-b hover:border-primary transition-all duration-300'
             >
               {link.label}
             </Link>
@@ -27,7 +27,7 @@ export default function DesktopHeader() {
       <div>
         <Button
           variant='primary'
-          className='rounded-lg'
+          className='rounded-lg text-foreground font-bold transition-all duration-300'
         >
           Chat on whatsapp
         </Button>
